@@ -1,0 +1,85 @@
+{
+  "expo": {
+    "name": "Barahub",
+    "slug": "barahub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D0F0E"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "ci.barahub.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Pour prendre des photos de vos travaux",
+        "NSMicrophoneUsageDescription": "Pour envoyer des messages vocaux",
+        "NSPhotoLibraryUsageDescription": "Pour partager des photos de vos travaux"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D0F0E"
+      },
+      "package": "ci.barahub.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#F4721E",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Pour envoyer des messages vocaux"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Pour partager des photos de vos travaux",
+          "cameraPermission": "Pour prendre des photos de vos travaux"
+        }
+      ]
+    ],
+    "scheme": "barahub",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f2249671-62a0-4393-84be-08123869619c"
+      }
+    },
+    "owner": "imperator79"
+  }
+}
