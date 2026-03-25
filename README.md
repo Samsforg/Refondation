@@ -1,0 +1,1 @@
+Cet ensemble de fichier permet de créer une application mobile installable(Apk) fonctionnant comme whatsapp. Cette application nommer Barahub met en relation des artisans ou professionnel de métiers et leurs clients
